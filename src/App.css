@@ -3,3 +3,44 @@ div {
   margin: 5px;
   padding: 5px;
 }
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.Sink { grid-area: 1 / 10 / 2 / 11; }
+
+.Oven { grid-area: 1 / 9 / 2 / 10; }
+
+.Kitchen { grid-area: 1 / 9 / 4 / 11; }
+
+.Half-Bath { grid-area: 4 / 5 / 6 / 7; }
+
+.Full-Bath { grid-area: 3 / 1 / 4 / 5; }
+
+.Living-Room { grid-area: 1 / 5 / 4 / 9; }
+
+.Bedroom-2 { grid-area: 4 / 1 / 6 / 5; }
+
+.Bedroom-3 { grid-area: 4 / 7 / 6 / 11; }
+
+.Bedroom-1 { grid-area: 1 / 1 / 3 / 5; }
+
+
+/* How I am thinking about it in regular HTML. Though not correctly translated into JSX.
+  <div class="container">
+    <div class="Sink"></div>
+    <div class="Oven"></div>
+    <div class="Kitchen"></div>
+    <div class="Half-Bath"></div>
+    <div class="Full-Bath"></div>
+    <div class="Living-Room"></div>
+    <div class="Bedroom-2"></div>
+    <div class="Bedroom-3"></div>
+    <div class="Bedroom-1"></div>
+  </div> 
+*/
